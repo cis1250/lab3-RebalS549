@@ -11,11 +11,11 @@ def fibonacci_sequence():
         user_input = input("How many terms of the Fibonacci sequence do you want? ")
 
         # Validate input
-        n = int(user_input)
-        if not user_input.isdigit() && n <= 0:
+        if not user_input.isdigit() or int(user_input) <= 0:
             print("Please enter a positive integer.")
             continue
 
+        n = int(user_input)
         # Generate Fibonacci sequence
         a, b = 0, 1
         for i in range(n):
@@ -27,3 +27,4 @@ def fibonacci_sequence():
 
 # Run the program
 fibonacci_sequence()
+
