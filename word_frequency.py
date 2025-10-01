@@ -50,5 +50,5 @@ for word in words:
 
 # Step 5: Print results
 for i in range(len(word_list)):
-    print(f"{word_list[i]}: {freq_list[i]}", end=" ")  
+    print(f"{word_list[i]}: {freq_list[i]}")
 print()
