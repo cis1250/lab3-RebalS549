@@ -36,6 +36,7 @@ while (is_sentence(user_sentence) == False):
     user_input = input("Enter a sentence: ")
     
 words = user_sentence.split()
+clean_words = [re.sub(r'[^\w]', '', word).lower() for word in words]
 
 word_list = []
 freq_list = []
