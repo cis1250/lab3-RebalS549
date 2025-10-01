@@ -49,6 +49,6 @@ for word in words:
         freq_list.append(1)
 
 # Step 5: Print results
-print("\nWord Frequencies:")
 for i in range(len(word_list)):
-    print(f"{word_list[i]}: {freq_list[i]}")
+    print(f"{word_list[i]}: {freq_list[i]}", end=" ")  
+print()
